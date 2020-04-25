@@ -200,7 +200,7 @@ def user_stats(df):
         print("\nNo gender data to share'")
 
 
-    # TO DO: Display earliest, most recent, and most common year of birth
+    # Display earliest, most recent, and most common year of birth
     if "Birth Year" in df.columns:
         earliest = df["Birth Year"].min()
         most_recent = df["Birth Year"].max()
@@ -214,6 +214,13 @@ def user_stats(df):
 
 
 def show_data(df):
+    """
+    Iterate through 5 entries at a time
+
+    Returns:
+        Print five rows of data to terminal
+
+    """
     user_input = input("\n Would you like to see the individual raw data? Enter 'yes' or 'no'\n").strip().lower()
     if user_input in ("yes"):
         i = 0
