@@ -5,7 +5,7 @@
 Udacity - Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+In this project, I had to explore the Bikeshare Data for three major cities in US - Chicago, New York City and Washington. The script takes in raw input to create an interactive experience in the terminal to explore descriptive statistics.
 
 ### Files used
 Include the files used
