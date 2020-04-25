@@ -21,4 +21,4 @@ This program was written in Python (version 3.8.0) and relies on the following l
 * numpy==1.17.4
 
 ### Credits
-I was inspired by [decarvalhohenrique] (https://github.com/decarvalhohenrique/programming-for-data-science-nanodegree) repository.
+I was inspired by [decarvalhohenrique](https://github.com/decarvalhohenrique/programming-for-data-science-nanodegree) repository.
