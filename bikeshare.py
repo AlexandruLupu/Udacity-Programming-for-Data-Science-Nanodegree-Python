@@ -164,6 +164,8 @@ def trip_duration_stats(df):
     # display total travel time
     total_travel_time = df["Trip Duration"].sum()
 
+    # Calculate time with % and // to return the travel time in  D:H:M:S format
+    # Inspired from: https://github.com/sauravraghuvanshi/Udacity-programming-for-Data-Science-With-Python-Nanodegree/blob/master/Project-2/bikeshare.py
     total_travel_time_conv = str(int(total_travel_time//86400)) + "d " + str(int(total_travel_time % 86400) // 3600) + "h " + str(int((((total_travel_time % 86400) % 3600)//60))) + "m " + str(int(((total_travel_time % 86400) % 3600) % 60)) + "s"
     print("\nTotal travel time was {}".format(total_travel_time_conv))
 
