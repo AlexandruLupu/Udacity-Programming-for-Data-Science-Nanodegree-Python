@@ -197,17 +197,18 @@ def user_stats(df):
         print("\nBreakdown of gender: \n{} : {} \n{} : {} \nMissing values: {}".format(gender[0], counts[0], gender[1], counts[1], nan_values))
 
     else:
-        print("\nNo gender data to share'")
+        # Print the same message for Gender and Birth Year when these columns are missing from df
+        print("\nThis dataset has no column named 'Gender'.")
 
 
-    # TO DO: Display earliest, most recent, and most common year of birth
+    # Display earliest, most recent, and most common year of birth
     if "Birth Year" in df.columns:
         earliest = df["Birth Year"].min()
         most_recent = df["Birth Year"].max()
         most_common = df["Birth Year"].mode()[0]
         print("\nEarliest year of birth: {}. \nMost recent year of birth: {}. \nMost common year of birth: {}".format(int(earliest), int(most_recent), int(most_common)))
     else:
-        print("This dataset has no column named 'Birth Year'.")
+        print("\nThis dataset has no column named 'Birth Year'.")
 
     print("\nThis took %s seconds." % round((time.time() - start_time), 3))
     print('-'*40)
